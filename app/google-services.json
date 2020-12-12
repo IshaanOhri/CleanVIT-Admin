@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "313185950132",
+    "firebase_url": "https://cleanvit-24976-default-rtdb.firebaseio.com",
+    "project_id": "cleanvit-24976",
+    "storage_bucket": "cleanvit-24976.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313185950132:android:8e6843e7bbf185c2f33ae1",
+        "android_client_info": {
+          "package_name": "com.ishaanohri.cleanvit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313185950132-5nj78329vujlqlhu83b1fe8pcka5fkdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ishaanohri.cleanvit",
+            "certificate_hash": "ac2986bc9066c723f2751eee44b83dccfd03b8b8"
+          }
+        },
+        {
+          "client_id": "313185950132-pfheqki1d3e1t6qooiddv17gb07bi8oc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ishaanohri.cleanvit",
+            "certificate_hash": "aa14abf14eebce6486cec6fdb171d201bf59a1bc"
+          }
+        },
+        {
+          "client_id": "313185950132-pq142l1soq6u6t3m7s65dijgmvhd3rph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ishaanohri.cleanvit",
+            "certificate_hash": "710e2a14baca9049fdd8cf06cfdb9521507cfb50"
+          }
+        },
+        {
+          "client_id": "313185950132-fpq05bu3t2jpqatgf7go3m8gq9u85boe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1dJ5kp7FL10rjTnVvsC6YQWQpPcFuicU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313185950132-fpq05bu3t2jpqatgf7go3m8gq9u85boe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313185950132:android:ae73f1946cad8186f33ae1",
+        "android_client_info": {
+          "package_name": "com.ishaanohri.cleanvit_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313185950132-fpq05bu3t2jpqatgf7go3m8gq9u85boe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1dJ5kp7FL10rjTnVvsC6YQWQpPcFuicU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313185950132-fpq05bu3t2jpqatgf7go3m8gq9u85boe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

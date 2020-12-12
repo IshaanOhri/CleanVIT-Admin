@@ -95,6 +95,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mobNoTextView = findViewById(R.id.mobileNoTextView);
         linearLayout = findViewById(R.id.linearLayout);
         progressBar = findViewById(R.id.progressBar);
+//        map = findViewById(R.id.map);
 
         String landmark = getIntent().getStringExtra("Landmark");
         String remarks = getIntent().getStringExtra("Remarks");
@@ -206,7 +207,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Float alpha = 0.2f;
         linearLayout.setAlpha(alpha);
         statusSwitch.setEnabled(false);
-        map.setEnabled(false);
+//        map.setEnabled(false);
         mobNoTextView.setEnabled(false);
         linearLayout.setEnabled(false);
         progressBar.setVisibility(View.VISIBLE);
@@ -217,7 +218,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Float alpha = 1.0f;
         linearLayout.setAlpha(alpha);
         statusSwitch.setEnabled(true);
-        map.setEnabled(true);
+//        map.setEnabled(true);
         mobNoTextView.setEnabled(true);
         linearLayout.setEnabled(true);
         progressBar.setVisibility(View.INVISIBLE);
