@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MapsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/view_grp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView"
+            app:layout_constraintStart_toStartOf="@+id/scrollView"
+            app:layout_constraintTop_toTopOf="@+id/scrollView">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/no_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/landmarkTextView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/landmark"
+                android:drawablePadding="10dp"
+                android:gravity="fill"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <TextView
+                android:id="@+id/dateTimeTextView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/time"
+                android:drawablePadding="10dp"
+                android:gravity="fill"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="275dp" />
+
+            <Switch
+                android:id="@+id/statusSwitch"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/status"
+                android:drawablePadding="10dp"
+                android:gravity="fill"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="335dp" />
+
+            <TextView
+                android:id="@+id/remarksTextView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/remark"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="start|top|fill"
+                android:maxHeight="100dp"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="414dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="10dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    tools:context=".MapsActivity"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="401dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="10dp"
+                android:gravity="fill"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/mobileNoTextView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/text_field"
+                android:drawableStart="@drawable/mobile"
+                android:drawableEnd="@drawable/call"
+                android:drawablePadding="10dp"
+                android:gravity="fill"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressBar"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:indicatorColor="#FFFFFF"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
