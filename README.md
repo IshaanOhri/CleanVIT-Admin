@@ -1,5 +1,5 @@
 <code>
-  <h1 align="center">CleanVIT</h1>
+  <h1 align="center">CleanVIT Admin</h1>
   <h3 align="center">The Daily Waste Management System</h3>
 </code>
 
